@@ -2,5 +2,5 @@
 kmRodado = int(input("Digite quantos quilometros foram percorridos: "))
 qtdDias = int(input("Digite quantos dias o carro foi alugado: "))
 
-precoAPagar = (qtdDias * 60) * (kmRodado * 0.15)
+precoAPagar = (qtdDias * 60) + (kmRodado * 0.15)
 print(f"\nTotal a pagar R$:{precoAPagar:.2f} Reais por {qtdDias} dias e {kmRodado} km rodado.")
