@@ -8,6 +8,5 @@ def gerador_de_password(tamanho=10):
     senha = "".join(random.choice(base) for i in range(tamanho))
 
     print(f"==password==\n {senha}")
-
-
+# ---------------------------------------------------
 gerador_de_password()
