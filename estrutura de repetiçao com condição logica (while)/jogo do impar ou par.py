@@ -1,12 +1,14 @@
 import random
 
-print("ola vamos jogar🕹️")
+print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n"
+      "VAMOS JOGAR PAR OU IMPAR 🕹️\n"
+      "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
 player = 3
 cpu = "impar"
 vitorias = 0
 
 while player != 0:
-    player = int(input("Escolha entre impar ou par\n\n"
+    player = int(input("Escolha uma das opções\n"
                        "✅[1] - para Impar\n"
                        "✅[2] - para Par\n"
                        "❌[0] - para sair\n"))
