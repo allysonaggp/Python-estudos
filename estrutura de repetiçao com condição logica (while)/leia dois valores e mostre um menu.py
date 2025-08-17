@@ -4,8 +4,6 @@ n1 = int(input("digite o primeiro numero: "))
 n2 = int(input("digite o segundo numero: "))
 n=0
 
-
-
 while n != 5:
     print("\nMenu de interação com numeros")
     print("Digite para realizarmos a ação:")
