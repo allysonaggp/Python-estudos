@@ -6,6 +6,7 @@ print(len(frase))
 # o .count("o") mostra quantas vezes a letra "o" apareceu
 print(frase.count('o'))
 # serve para procurar em qual posiçao esta alocado
+print(frase.index("o"))
 # quando retorna o valor -1 e porque ele nao existe
 print(frase.find("deo"))
 # o "in" verifica se a palavara "video" esta dentro do objeto "frase"
