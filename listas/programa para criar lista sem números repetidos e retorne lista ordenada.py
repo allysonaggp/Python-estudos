@@ -5,14 +5,25 @@
 
 lista = []
 
-while True:
-    numero = int(input('Digite um numero: '))
-    print('para sair digite [0]')
-    if numero not in lista:
+resposta = "S"
+while resposta == 'S':
+    numero = input('Digite um numero: ')
+    if numero.isdigit() and numero not in lista:
         lista.append(numero)
-    elif numero == 0:
-        break
-    else:
+        print(f'Numero {numero} foi adicionado com sucesso')
+    elif numero in lista:
         print('Numero já cadastrado')
-    lista.sort()
-    print(lista)
+    else:
+        print('Digite um numero valido')
+
+    resposta = input('Gostaria de continuar [S/N]').strip().upper()[0]
+    if resposta == "N":
+        lista.sort()
+        if len(lista)==0:
+            print('\n=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
+                  '\nnão tiveram números cadastrados')
+        else:
+            print('\n=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
+                  f'\nOs número cadastrados foram {lista}')
+        break
+
