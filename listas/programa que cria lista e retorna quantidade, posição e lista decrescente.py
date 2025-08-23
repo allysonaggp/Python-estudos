@@ -14,7 +14,7 @@ for i in range(quantidade):
 qtd_lista = len(lista)
 lista.sort(reverse=True)
 
-print(f'\nA lista comtem {qtd_lista} números')
-print(f'\nA lista de forma decrescente contem, os números: '
-      f'\n{lista}')
-print(f'\nO número 5 esta na posição: {lista.index(5)} da lista')
+print(f'\nA lista contem {qtd_lista} números')
+print(f'Os valores de ordem decrescente são: {lista}')
+if 5  in lista:
+    print(f'O número 5 esta na posição: {lista.index(5)} da lista')
